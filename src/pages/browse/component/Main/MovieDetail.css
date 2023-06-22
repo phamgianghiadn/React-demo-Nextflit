@@ -1,0 +1,32 @@
+.detail {
+padding-top: 55px;
+
+}
+.detail img{
+  width: 100%;
+  height: 100%;
+}
+.gird-youtube{
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   top: 10%;
+  background-color: rgb(46, 43, 43);
+  z-index: 1000;
+
+
+}
+.gird-youtube h3{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #FFF;
+}
+.gird-youtube .text{
+  padding-left:20px;
+}

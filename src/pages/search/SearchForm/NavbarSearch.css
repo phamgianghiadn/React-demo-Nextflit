@@ -1,0 +1,30 @@
+
+.navbar {
+  position: fixed;
+ display: flex;
+ justify-content: space-between;
+ 
+
+}
+.navbar h4:hover{
+  text-shadow: 2px 2px 30px red;
+ font-style: italic;
+}
+.navbar .bi-search {
+  border: 1px solid #c54141;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius:15px;
+  color: aliceblue;
+}
+.navbar .bi-search:hover{
+  padding: 7px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-shadow: 2px 2px 30px red;
+}
+.dark{
+  background-color: black;
+}
+
