@@ -1,30 +1,31 @@
-
 .navbar {
   position: fixed;
- display: flex;
- justify-content: space-between;
- z-index: 1000;
-
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
 }
-.navbar h4:hover{
+.navbar a {
+  text-decoration: none;
+}
+.navbar h4:hover {
   text-shadow: 2px 2px 30px red;
- font-style: italic;
+  font-style: italic;
 }
 .navbar .bi-search {
   border: 1px solid #c54141;
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  border-radius:15px;
+  border-radius: 15px;
   color: aliceblue;
 }
-.navbar .bi-search:hover{
+.navbar .bi-search:hover {
   padding: 7px;
   padding-left: 12px;
   padding-right: 12px;
   text-shadow: 2px 2px 30px red;
 }
-.dark{
+.dark {
   background-color: black;
   border-bottom: 3px solid rgb(248, 246, 242);
 }
@@ -35,7 +36,7 @@
   font-size: 16px;
   font-weight: 700;
   color: white;
-  
+
   cursor: pointer;
   position: relative;
   background-color: transparent;
@@ -43,9 +44,9 @@
   overflow: hidden;
   z-index: 1;
   font-family: inherit;
- }
- 
- .menu-bar::before {
+}
+
+.menu-bar::before {
   content: "";
   position: absolute;
   left: 0;
@@ -54,11 +55,11 @@
   height: 100%;
   background-color: rgb(202, 134, 56);
   transform: translateX(-100%);
-  transition: all .3s;
+  transition: all 0.3s;
   z-index: -1;
   border-radius: 10px;
- }
- 
- .menu-bar:hover::before {
+}
+
+.menu-bar:hover::before {
   transform: translateX(0);
- }
+}

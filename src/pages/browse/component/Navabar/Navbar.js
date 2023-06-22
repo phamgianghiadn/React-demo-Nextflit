@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [theme, settheme] = useState("light");
@@ -18,12 +18,12 @@ const Navbar = () => {
       window.removeEventListener("scroll", setThemes);
     };
   }, []);
-
+ 
   return (
     <div>
       <div className={`container-fluid navbar ${theme}`}>
-        <Link to="/" >
-          <h4 onClick={changeHomeHandler} className="text-danger">
+        <Link to="/">
+          <h4  className="text-danger">
             Movie App
           </h4>
         </Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
           </a>
         </div>
         <Link to="/search">
-          <i onClick={changeSearchHandler} className="bi bi-search"></i>
+          <i  className="bi bi-search"></i>
         </Link>
       </div>
     </div>

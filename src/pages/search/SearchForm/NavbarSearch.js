@@ -1,5 +1,6 @@
 import "./NavbarSearch.css";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const NavbarSearch = () => {
   const [theme, settheme] = useState("light");
@@ -17,24 +18,16 @@ const NavbarSearch = () => {
       window.removeEventListener("scroll", setThemes);
     };
   }, []);
-  const changeHomeHandler = () => {
-    window.location.assign("/");
-  };
 
-  const changeSearchHandler = () => {
-    window.location.assign("/search");
-  };
   return (
     <div>
       <div className={`container-fluid navbar ${theme}`}>
-        <div>
-          <h4 onClick={changeHomeHandler} className="text-danger">
-            Movie App
-          </h4>
-        </div>
-        <div>
-          <i onClick={changeSearchHandler} className="bi bi-search"></i>
-        </div>
+        <Link to="/">
+          <h4 className="text-danger">Movie App</h4>
+        </Link>
+        <Link to="/search">
+          <i className="bi bi-search"></i>
+        </Link>
       </div>
     </div>
   );
